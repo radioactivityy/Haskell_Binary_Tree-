@@ -1,0 +1,12 @@
+data Color = colorsList Int Int Int deriving (Show)
+    | red = 255 0 255
+    | green = 0 255 0
+    | blue = 55 0 0 
+
+colorsList = [Red, Green, Blue]
+
+colorsList = Red == Green   = False-- This would be False
+colorsList = Red == Blue   = False-- This would be False
+colorsList = Red == Red   = True-- This would be False
+
+

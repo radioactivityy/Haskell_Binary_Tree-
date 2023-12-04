@@ -1,8 +1,7 @@
 data Tree a = Leaf a 
            | Branch a (Tree a) (Tree a ) deriving (Show)
 
-testTree1 :: Tree Int
-testTree1 = Branch 2 (Branch 2 (Leaf 2) (Leaf 2)) (Leaf 6)
+
 
 testTree2 :: Tree Char
 testTree2 = Branch 'a' (Branch 'c' (Leaf 'z') (Leaf 'z')) (Leaf 'v')

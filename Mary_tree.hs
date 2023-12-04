@@ -8,7 +8,7 @@ testTree1 = MTree 1 [(MTree 2 [(MTree 3 []),(MTree 4 [(MTree 5 []),(MTree 6 [])]
 
 
 msum :: MTree Int -> Int
-msum (MTree a []) = a
+
 msum (MTree a subtrees) = a + sum (map msum subtrees)
 
 mToList :: MTree a -> [a]
